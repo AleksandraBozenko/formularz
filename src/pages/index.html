@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -143,11 +143,56 @@
       href="pwa/apple-splash-1136-640.png"
       media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <main class = "main">
+      <section class = "content">
+        <h1 class = "content__title">Co oferuję?</h1>
+        <div class = "box">
+          <div class="box__item">
+            <div class="box__item--icon">
+              <img class = "box__item--icon-image" src = "/src/assets/img/paint-palette.svg" alt = "ikona">
+            </div>
+            <h2 class="box__item--title">Design</h2>
+            <p class = "box__item--text">Potrzebujesz super grafiki, a może "designerskiego" projektu?</p>
+            <a class = "box__item--button" href = "#">
+              <button class = "box__item--button-body">
+                <p class = "box__item--button-body-text">Zerknij tutaj!</p>
+              </button>
+            </a>
+          </div>
+
+          <div class="box__item">
+            <div class="box__item--icon">
+              <img class = "box__item--icon-image" src = "/src/assets/img/movie.svg" alt = "ikona">
+            </div>
+            <h2 class="box__item--title">Filmy</h2>
+            <p class = "box__item--text">Zależy Ci na znakomitej jakości? Efektu "boom"?</p>
+            <a class = "box__item--button" href = "#">
+              <button class = "box__item--button-body">
+                <p class = "box__item--button-body-text">Zerknij tutaj!</p>
+              </button>
+            </a>
+          </div>
+
+          <div class="box__item">
+            <div class="box__item--icon">
+              <img class = "box__item--icon-image" src = "/src/assets/img/flat.svg" alt = "ikona">
+            </div>
+            <h2 class="box__item--title">Animacje</h2>
+            <p class = "box__item--text">Potrzebna wstawka do filmu?
+            </br>
+             Animowana reklama, logo?</p>
+            <a class = "box__item--button" href = "#">
+              <button class = "box__item--button-body">
+                <p class = "box__item--button-body-text">Zerknij tutaj!</p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

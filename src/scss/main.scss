@@ -4,10 +4,93 @@
 @import "modules/hello.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  width: 100%;
+  background: #000;
+  font-family: 'Roboto', sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  background: #000;
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  &__title{
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+  }
+}
+.box{
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 3vw 0;
+  display: flex;
+  justify-content: space-around;
+  &__item{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &--title{
+      width: 100%;
+      padding: 0 6px;
+      border-left: 2px solid rgb(230, 230, 230);
+      font-weight: bold;
+    }
+    &--text{
+      height: 60px;
+      color:rgb(117, 117, 117);
+      margin-bottom: 2vw;
+    }
+    &--button{
+      &-body{
+        width: 20vw;
+        background: #000;
+        border: none;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        &-text{
+          margin: 6px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .box{
+    flex-direction: column;
+    align-items: center;
+    &__item{
+      width: 50%;
+      margin: 30px;
+      &--title{
+        width: auto;
+      }
+      &--text{
+        height: 80px;
+        width: 300px;
+        margin-bottom: 0;
+        text-align: center;
+      }
+      &--button{
+        width: 80%;
+
+        &-body{
+          width: 100%;
+        }
+      }
+    }
+  }
 }
